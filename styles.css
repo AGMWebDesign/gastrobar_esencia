@@ -32,6 +32,7 @@ header {
   letter-spacing: 2px;
 }
 
+/* Menú Hamburguesa */
 .hamburger {
   cursor: pointer;
   width: 30px;
@@ -39,13 +40,27 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1001;
 }
 
 .hamburger span {
   height: 3px;
   background: #000;
   border-radius: 2px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+}
+
+/* Animación a X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* Navegación oculta */
@@ -206,3 +221,106 @@ header {
     color: #555;
     margin-top: 0.3rem;
 }
+
+
+/* Reservas */
+.reservas {
+  padding: 6rem 2rem;
+  background: #fff;
+  color: #000;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reservas h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.campo input,
+.campo textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.campo-doble {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.campo-doble .campo {
+  flex: 1;
+  min-width: 140px;
+}
+
+.btn-reservar {
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-reservar:hover {
+  background: #333;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 80px);
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+

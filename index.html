@@ -17,17 +17,17 @@
         </div>
         <nav class="nav" id="nav">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Carta</a></li>
-                <li><a href="#">Reservas</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#carta">Carta</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="inicio">
             <h1>NO COCINAMOS. CREAMOS</h1>
             <p>Una experiencia gastronómica que no sabías que necesitabas</p>
         </section>
@@ -115,6 +115,39 @@
                 </li>
                 </ul>
             </div>
+            </section>
+
+            <section class="reservas" id="reservas">
+                <h2 data-aos="fade-up">Reservas</h2>
+                <form class="formulario" data-aos="fade-up">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required />
+                    </div>
+
+                    <div class="campo-doble">
+                        <div class="campo">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha" required />
+                        </div>
+                        <div class="campo">
+                            <label for="hora">Hora</label>
+                            <input type="time" id="hora" name="hora" required />
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="personas">Personas</label>
+                        <input type="number" id="personas" name="personas" min="1" max="20" required />
+                    </div>
+
+                    <div class="campo">
+                        <label for="comentarios">Comentarios</label>
+                        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-reservar">Reservar</button>
+                </form>
             </section>
 
     </main>
