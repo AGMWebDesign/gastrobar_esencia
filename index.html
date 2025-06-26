@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia | Gastrobar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <div class="logo">ESENCIA</div>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Carta</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>NO COCINAMOS. CREAMOS</h1>
+            <p>Una experiencia gastronómica que no sabías que necesitabas</p>
+        </section>
+
+        <section class="about" id="nosotros">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2>Nuestra esencia</h2>
+                    <p>
+                        En ESENCIA no buscamos alimentar. Buscamos provocar.<br>
+                        Nuestro espacio es un laboratorio de sabores, texturas y momentos donde lo inesperado es la norma.
+                    </p>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Interior del local" />
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="carta">
+            <h2 data-aos="fade-up">La Carta</h2>
+
+            <div class="menu-category" data-aos="fade-up">
+                <h3>Entrantes</h3>
+                <ul>
+                <li>
+                    <div class="item-info">
+                    <span class="item-name">Pan de masa madre ahumado</span>
+                    <span class="item-price">4€</span>
+                    </div>
+                    <p class="item-desc">Con mantequilla infusionada en romero.</p>
+                </li>
+                <li>
+                    <div class="item-info">
+                    <span class="item-name">Tártaro de remolacha</span>
+                    <span class="item-price">7€</span>
+                    </div>
+                    <p class="item-desc">Con crema de anacardos y polvo de aceituna negra.</p>
+                </li>
+                </ul>
+            </div>
+
+            <div class="menu-category" data-aos="fade-up">
+                <h3>Platos Principales</h3>
+                <ul>
+                <li>
+                    <div class="item-info">
+                    <span class="item-name">Carrillera al cacao</span>
+                    <span class="item-price">15€</span>
+                    </div>
+                    <p class="item-desc">Lenta cocción con salsa de vino tinto y cacao amargo.</p>
+                </li>
+                <li>
+                    <div class="item-info">
+                    <span class="item-name">Risotto de setas silvestres</span>
+                    <span class="item-price">13€</span>
+                    </div>
+                    <p class="item-desc">Con parmesano curado y trufa rallada.</p>
+                </li>
+                </ul>
+            </div>
+
+            <div class="menu-category" data-aos="fade-up">
+                <h3>Postres</h3>
+                <ul>
+                <li>
+                    <div class="item-info">
+                    <span class="item-name">Corteza dulce</span>
+                    <span class="item-price">6€</span>
+                    </div>
+                    <p class="item-desc">Brownie crujiente con corazón de caramelo salado.</p>
+                </li>
+                </ul>
+            </div>
+
+            <div class="menu-category" data-aos="fade-up">
+                <h3>Bebidas</h3>
+                <ul>
+                <li>
+                    <div class="item-info">
+                    <span class="item-name">Cóctel de la casa</span>
+                    <span class="item-price">9€</span>
+                    </div>
+                    <p class="item-desc">Gin infusionado con albahaca y lima negra.</p>
+                </li>
+                </ul>
+            </div>
+            </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+</body>
+</html>
