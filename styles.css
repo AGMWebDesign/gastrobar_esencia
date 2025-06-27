@@ -290,6 +290,124 @@ header {
   background: #333;
 }
 
+/* Contacto */
+.contacto {
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.contacto h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.contacto-contenido {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-contacto {
+  flex: 1;
+  min-width: 280px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.info-contacto a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.info-contacto a:hover {
+  color: #888;
+}
+
+.mapa {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer-contenido {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-enlaces {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.footer-enlaces li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.footer-enlaces li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* Coockies */ 
+.cookies-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2000;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cookies-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cookies-banner button {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.cookies-banner button:hover {
+  background: #eee;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

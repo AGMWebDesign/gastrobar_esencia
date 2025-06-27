@@ -26,4 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
       hamburger.classList.remove('active');
     }
   });
+
+  const cookiesBanner = document.getElementById('cookies-banner');
+  const aceptarBtn = document.getElementById('aceptar-cookies');
+
+  if (!localStorage.getItem('cookies-aceptadas')) {
+    cookiesBanner.style.display = 'flex';
+  }
+
+  aceptarBtn.addEventListener('click', () => {
+    localStorage.setItem('cookies-aceptadas', 'true');
+    cookiesBanner.style.display = 'none';
+  });
 });
